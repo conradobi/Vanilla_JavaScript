@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 200px auto;
+  text-align: center;
+}
+h2 {
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+
+.counterDisplay {
+  padding-bottom: 30px;
+  font-size: 100px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 18x;
+  margin-left: 20px;
+  cursor: pointer;
+  border: 2px solid #000000;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: white;
+  outline: #fff;
+}

@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: 60px auto;
+  padding: 30px;
+  border: 2px saddlebrown solid;
+  text-align: center;
+  background-color: rgb(73, 38, 38);
+  color: white;
+}
+img {
+  width: 30%;
+}
+.review-name {
+  font-size: 24px;
+}
+.review-job {
+  font-size: 18px;
+  padding: 8px 0;
+}
+.review-msg {
+  line-height: 20px;
+  padding: 40px;
+}
+.btn {
+  padding: 10px 35px;
+  border-style: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: brown;
+  color: white;
+}

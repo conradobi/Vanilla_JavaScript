@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="toggle">
+                <a href="#" class="navbar-brand">Resto</a>
+                <button class="cta black-cta" id="mobile-menu">
+                   <span><i class="fa fa-bars" aria-hidden="true"></i></span> MENU</button>
+            </div>
+            <div id="desktop-menu">
+                <div class="nav-main" id="nav-bar">
+                    <ul class="nav-bar">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                    <button class="cta">Book a table</button>
+                
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    
+    <script src="./apps.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                let resizeTimer;
+                $(window).on('resize', function (e) {
+                    clearTimeout(resizeTimer)
+                    resizeTimer = setTimeout(function(){
+                        if ($(window).width() >= 991) {
+                            $('#nav-bar').show()
+                        }else{
+                             $('#nav-bar').hide()
+                        }
+                    }, 250)
+                })
+                $('#mobile-menu').on('click', function() {
+                    $('#nav-bar').toggle()
+                })
+            })
+        </script>
+</body>
+</html>
